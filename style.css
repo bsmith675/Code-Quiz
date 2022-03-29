@@ -28,7 +28,18 @@ header {
     margin: 0 auto 1o auto;
     z-index: 9999;
     padding: 15px;
+}
 
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
 
+button {
+    width: auto;
+    border: none;
+    overflow: visible;
 }
 
