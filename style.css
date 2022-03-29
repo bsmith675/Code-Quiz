@@ -10,3 +10,13 @@
     border: none;
 
 }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
