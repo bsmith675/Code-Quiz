@@ -125,3 +125,11 @@ function storeHighScores(event) {
 
     
 }
+
+var choose1 = function() {checkAnswer(0);};
+var choose2 = function() {checkAnswer(1);};
+var choose3 = function() {checkAnswer(2);};
+var choose4 = function() {checkAnswer(3);};
+var gameover = function(event) {
+
+}
