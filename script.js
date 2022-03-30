@@ -184,4 +184,4 @@ answer4.addEventListener("click", choose4);
 submitInitialBtn.addEventListener("click", function(event){
     storeHighScores(event);
 });
-highScoreBtn.addEventListener("click", showHighScores);
+
