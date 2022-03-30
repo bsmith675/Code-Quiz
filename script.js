@@ -45,6 +45,17 @@ var newQuiz = function(d) {
     timeLeft = 60
     timerEl.textContent = timeLeft
     initialInput.textContent = "";
+
+
+    var startTimer = setInterval(function() {
+        timeLeft--;
+        timerEl.textContent = "Time Remaining: " + timeLeft;
+        if(timeLeft <= 0) {
+            clearInterval(startTimer);
+            if (questionIndex < questions.length - 1) {
+                gameover();
+            }
+        }
+    },1000);
+
 }
-
-
