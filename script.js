@@ -74,3 +74,21 @@ var nextQuestion = function() {
     answer3.textContent = questions[questionIndex].choices[2];
     answer4.textContent = questions[questionIndex].choices[3];
 }
+
+function checkAnswer(answer) {
+    if (questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
+        answerCheck.textContent = "Correct!"
+    } else {
+        timeLeft -= 10
+        answerCheck.textContent = "Wrong!"
+    }
+
+    questionIndex++;
+
+    if (questionIndex < questions.length) {
+        nextQuestion();
+    } else {
+        gameover();
+    }
+
+}
