@@ -92,3 +92,17 @@ function checkAnswer(answer) {
     }
 
 }
+
+function storeHighScores(event) {
+    event.preventDefault();
+
+    if (initialInput.value === "") {
+        alert("Enter Your Name");
+        return;
+    }
+
+    var savedHighScores = localStorage.getItem("High Scores");
+    var scoresArray;
+
+    
+}
