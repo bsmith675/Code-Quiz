@@ -132,4 +132,35 @@ var choose3 = function() {checkAnswer(2);};
 var choose4 = function() {checkAnswer(3);};
 var gameover = function(event) {
 
+    initialFormEl.classList.remove("hide")
+
+    questionContainerEl.classList.add("hide")
+    
+    answerCheck.classList.add("hide")
+
+    var section = document.createdElement('section');
+    section.setAttribute('id', 'gameover')
+
+    var h1 = document.createElement('h1');
+    h1.innerHTML = "Good Job"
+
+    var p = document.createElement('p');
+    p.setAttribute('id', 'scoreKeeper')
+    p.innerHTML = "You now have a final score of: " + timeLeft
+
+    section.appendChild(h1);
+    section.appendChild(p);
+    document.body.appendChild(section);
+}
+
+var showHighScores = function () {
+
+    document.getElementById('gameover').classList.add('hide')
+    initialFormEl.classList.add('hide')
+
+    var section = document.createElement('section')
+    section.setAttribute('id', 'HighScoreList')
+    document.body.appendChild(section);
+
+    var high
 }
