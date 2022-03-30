@@ -34,3 +34,17 @@ var submitInitialBtn = document.querySelector("#submitInitialBtn")
 var highScoreBtn = document.querySelector("#highscore-link")
 var initialInput = document.getElementById("initialInput");
 
+///This section is for the button variable///
+
+var answer1 = document.querySelector('#btn1')
+var answer2 = document.querySelector('#btn2')
+var answer3 = document.querySelector('#btn3')
+var answer4 = document.querySelector('#btn4')
+
+var newQuiz = function(d) {
+    timeLeft = 60
+    timerEl.textContent = timeLeft
+    initialInput.textContent = "";
+}
+
+
