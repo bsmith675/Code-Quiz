@@ -6,12 +6,12 @@ var questions = [
     },
     {
         question: "Which president dropped the atomic bomb on August 6, 1945?",
-        choices: ["1. Woodrow Wilson", "2. Franklin D. Roosevelt", "3. Calvin Coolidge", "4. Harry S. Truman"],
-        amswer: "4. Harry S. Truman"
+        choices: ["1. Woodrow Wilson", "2. Harry S. Truman", "3. Calvin Coolidge", "4. Franklin D. Roosevelt"],
+        amswer: "2. Harry S. Truman"
 
-    }
+    },
     {
-        question: "What event lead the US to join WW2",
+        question: "What event lead to the US involvement in WW2",
         choices: ["1. Nazi Invasion of Poland", "2. Pearl Harbor", "3. Incursions of U-Boats in Atlantic", "4. None of The Above"],
         answer: "2. Pearl Harbor"
     }
