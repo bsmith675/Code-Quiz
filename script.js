@@ -16,4 +16,21 @@ var questions = [
         answer: "2. Pearl Harbor"
     }
 
-]
+];
+
+var timeLeft = 60;
+var timerEl = document.querySelector("#timer")
+var titleEl = document.querySelector("#title")
+var startButtonEl = document.querySelector("#start-btn")
+var startContainerEl = document.querySelector("#start-container")
+var questionContainerEl = document.querySelector("#question-container")
+var answerCheck = document.querySelector("#answer-checker")
+var questionEl = document.querySelector('#question')
+var ScoreEl = document.querySelector("#score-container")
+var questionIndex = 0;
+var listOfHighScores = document.getElementById("listOfHighScores");
+var initialFormEl = document.querySelector("#input")
+var submitInitialBtn = document.querySelector("#submitInitialBtn")
+var highScoreBtn = document.querySelector("#highscore-link")
+var initialInput = document.getElementById("initialInput");
+
