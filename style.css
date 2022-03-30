@@ -43,7 +43,7 @@ button {
     overflow: visible;
 }
 
-.button {
+.btn {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
@@ -54,7 +54,7 @@ button {
     font-size: 12pt
 }
 
-.button:hover {
+.btn:hover {
     background-color: white;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
