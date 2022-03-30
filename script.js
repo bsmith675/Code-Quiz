@@ -104,5 +104,24 @@ function storeHighScores(event) {
     var savedHighScores = localStorage.getItem("High Scores");
     var scoresArray;
 
+    if (savedHighScores === null) {
+        scoresArray = [];
+    } else {
+        scoresArray = JSON.parse(savedHighScores)
+    }
+
+    var userScore = {
+        initials: initialInput.value,
+        score: document.getElementById('scoreKeeper').textContent
+    };
+
+    console.log(userScore);
+    scoresArray.push(userScore);
+
+    var scoresArrayString = JSON.stringify(scoresArray);
+    window.localStorage.setItem("high Scores", scoresArrayString);
+
+    showHighScores();
+
     
 }
