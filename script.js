@@ -59,3 +59,18 @@ var newQuiz = function(d) {
     },1000);
 
 }
+
+startButtonEl.addEventListener("click", function() {
+    newQuiz();
+    startContainerEl.classList.add("hide")
+    nextQuestion();
+});
+
+var nextQuestion = function() {
+    questionContainerEl.classList.remove("hide");
+    questionEl.textContent = questions[questionIndex].question;
+    answer1.textContent = questions[questionIndex].choices[0];
+    answer2.textContent = questions[questionIndex].choices[1];
+    answer3.textContent = questions[questionIndex].choices[2];
+    answer4.textContent = questions[questionIndex].choices[3];
+}
